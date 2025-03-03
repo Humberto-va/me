@@ -90,3 +90,33 @@ but now I work as an automotive tech for Ford and Jiffylube</p>
     </div>
 </body>
 </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image Example</title>
+</head>
+<body>
+
+    <!-- Image to change -->
+    <img id="myImage" src="Self-portrait.jpg" alt="Image" width="300" height="200">
+
+    <!-- Button to trigger the image change -->
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage() {
+            // Get the image element
+            var img = document.getElementById('myImage');
+            
+            // Check the current image source and change it accordingly
+            if (img.src.includes('image1.jpg')) {
+                img.src = 'Car.jpg'; // Change to another image
+            } else {
+                img.src = 'Self-portrait.jpg'; // Change back to the first image
+            }
+        }
+    </script>
+
+</body>
+</html>
