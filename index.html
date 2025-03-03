@@ -33,7 +33,7 @@
         <header class="main-info">
             <h1>Humberto Valdez</h1>
 		<p>Email:humbertovaldez@lewisu.edu</p>
-		<img src="Car.jpg" width="800" height="800" alt="image of screenshot"">
+		<img src="Self-portrait.jpg" width="800" height="800" alt="image of screenshot"">
             <h1></h1>
         </header>
 
@@ -88,13 +88,11 @@ but now I work as an automotive tech for Ford and Jiffylube</p>
         </section>
 	    
     </div>
-</body>
-</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Image Example</title>
+    <title>Toggle Image Example</title>
 </head>
 <body>
 
@@ -102,21 +100,24 @@ but now I work as an automotive tech for Ford and Jiffylube</p>
     <img id="myImage" src="Self-portrait.jpg" alt="Image" width="300" height="200">
 
     <!-- Button to trigger the image change -->
-    <button onclick="changeImage()">Change Image</button>
+    <button onclick="toggleImage()">Toggle Image</button>
 
     <script>
-        function changeImage() {
+        function toggleImage() {
             // Get the image element
             var img = document.getElementById('myImage');
             
-            // Check the current image source and change it accordingly
-            if (img.src.includes('image1.jpg')) {
-                img.src = 'Car.jpg'; // Change to another image
+            // Toggle the image source based on current state
+            if (img.src.includes('Self-portrait.jpg')) {
+                img.src = 'Car.jpg'; // Change to image2
             } else {
-                img.src = 'Self-portrait.jpg'; // Change back to the first image
+                img.src = 'Self-portrait.jpg'; // Change back to image1
             }
         }
     </script>
+
+</body>
+</html>
 
 </body>
 </html>
