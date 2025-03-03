@@ -33,7 +33,37 @@
         <header class="main-info">
             <h1>Humberto Valdez</h1>
 		<p>Email:humbertovaldez@lewisu.edu</p>
-		<img src="Self-portrait.jpg" width="800" height="800" alt="image of screenshot"">
+		<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image Example</title>
+</head>
+<body>
+
+    <!-- Image to change -->
+    <img id="myImage" src="Self-portrait.jpg" alt="Image" width="500" height="400">
+
+    <!-- Button to trigger the image change -->
+    <button onclick="toggleImage()">Toggle Image</button>
+
+    <script>
+        function toggleImage() {
+            // Get the image element
+            var img = document.getElementById('myImage');
+            
+            // Toggle the image source based on current state
+            if (img.src.includes('Self-portrait.jpg')) {
+                img.src = 'Car.jpg'; // Change to image2
+            } else {
+                img.src = 'Self-portrait.jpg'; // Change back to image1
+            }
+        }
+    </script>
+
+</body>
+</html>
+
             <h1></h1>
         </header>
 
@@ -115,9 +145,6 @@ but now I work as an automotive tech for Ford and Jiffylube</p>
             }
         }
     </script>
-
-</body>
-</html>
 
 </body>
 </html>
